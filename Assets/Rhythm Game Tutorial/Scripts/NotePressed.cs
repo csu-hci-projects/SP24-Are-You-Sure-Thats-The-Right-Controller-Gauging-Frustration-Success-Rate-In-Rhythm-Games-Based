@@ -6,6 +6,8 @@ public class NotePressed : MonoBehaviour{
     public bool canBePress;
     public KeyCode KeyToPress;
 
+    public KeyCode buttonToPress;
+
     private bool obtained = false;
 
     
@@ -16,7 +18,7 @@ public class NotePressed : MonoBehaviour{
 
     // Update is called once per frame
     void Update(){
-        if (Input.GetKeyDown(KeyToPress)){
+        if (Input.GetKeyDown(KeyToPress) || Input.GetKeyDown(buttonToPress)){
             if (canBePress){
 
                 GameManager.instance.NoteHit();
