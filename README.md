@@ -1,36 +1,22 @@
-Monday - 
-Eryn and Andy looked for rhythm ideas online. 
-Britta and Ziyang were starting the paper.
-All members meet after class to discuss our plans for 20 min.
+# Are You Sure Thats The Right Controller: Gauging Frustration & Success Rate In Rhythm Games using Different Game Controllers
 
-Tuesday - 
-Eryn was downloading Unity and getting GitHub to connect to Unity.
-Andy started the code in Unity with C#.
-Britta researched how to do the related work.
-Ziyang started how to write ACM paper in Overleaf.
-All members meet after the CS464 class for 1 hour to check each other's progress and make sure everyone can edit the paper in the same file.
 
-Wednesday - 
-Eryn and Andy tried to update the code of the prototype on GitHub, but it was unsuccessful.
-Britta was working on related work and getting more citations for the paper.
-Ziyang researched how to write a good methodology.
-We didn't meet on Wednesday but messaged each other on Discord to check each other's progress.
+## Project Overview
+  In the world of input devices for games there can be many different factors in why a user may choose to use it. This study aims to understand different controllers and features that lead to higher success rates and frustration levels for users when playing a rhythm game.
+  
+## What the project does
+  The project investigates the relationship between different game controllers and player experiences in rhythm games. It aims to answer questions such as:
 
-Thursday - 
-Eryn and Andy were attempting to upload the code to GitHub again, but it was unsuccessful.
-Britta helped with the code uploading and it was successful.
-Ziyang started writing the methodology.
-We meet for 30 min.
-
-Friday - 
-Ziyang finished the methodology and Andy helped him a little bit.
-Eryn was out and doing a MURALS event.
-Britta was working on the related work.
-We had a phone call on Discord to discuss finalizing the paper.
-
-Saturday - 
-Andy added controller support for the Xbox controller for the game.
-Eryn finished the introduction and recorded the prototype showcase.
-Britta finished the related work.
-Ziyang is doing the README.md
-All members meet to read through the paper and check for spelling mistakes and grammar and meet for two hours.
+- How do different controllers affect frustration levels during gameplay?
+- Which controllers lead to higher success rates in rhythm games?
+- Are there specific controller features (e.g., button size, pressure sensitivity) that significantly impact player performance?
+## Why the project is useful
+  Understanding the impact of game controllers on user experiences is valuable for both individuals and developers. For individuals, it provides insights into choosing the right controller for their preferred game genre. For developers, it informs design decisions and helps create more enjoyable and accessible experiences.
+## How users can get started with the project
+* Visit [this project repository](https://github.com/csu-hci-projects/SP24-Are-You-Sure-Thats-The-Right-Controller-Gauging-Frustration-Success-Rate-In-Rhythm-Games-Based) on GitHub.
+* Explore the README for details on data collection, analysis, and findings.
+* Contribute by sharing your own experiences with different controllers in rhythm games.
+## Where users can get help with your project
+For any questions or assistance, feel free to open an issue in the [GitHub repository](https://github.com/csu-hci-projects/SP24-Are-You-Sure-Thats-The-Right-Controller-Gauging-Frustration-Success-Rate-In-Rhythm-Games-Based/issues).
+## Who maintains and contributes to the project
+This project is maintained by the CSU Human-Centered-Interaction(HCI) 464 Project teams. Contributions from researchers, gamers, and anyone interested in improving gaming experiences are welcomed.
