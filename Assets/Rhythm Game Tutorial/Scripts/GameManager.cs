@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -15,6 +16,8 @@ public class GameManager : MonoBehaviour{
 
     public int currentScore;
     public int scorePerNote = 100;
+    public int scorePerGood = 125;
+    public int scorePerPerfect = 150;
 
     public int currentMultiplier; 
     public int multiplierTracker;
@@ -53,11 +56,26 @@ public class GameManager : MonoBehaviour{
             }
 
         multiplierText.text = "Multiplier: x" + currentMultiplier;
-        currentScore += scorePerNote * currentMultiplier;
+        // currentScore += scorePerNote * currentMultiplier;
         scoreText.text = "Score: " + currentScore;
 
         }
 
+    }
+
+    public void NormalHit(){
+        currentScore += scorePerNote * currentMultiplier;
+        NoteHit();
+    }
+
+    public void GoodHit(){
+        currentScore += scorePerGood * currentMultiplier;
+        NoteHit();
+    }
+
+    public void PerfectHit(){
+        currentScore += scorePerPerfect * currentMultiplier;
+        NoteHit();
     }
 
     public void NoteMissed(){
