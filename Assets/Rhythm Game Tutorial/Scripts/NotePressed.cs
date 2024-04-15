@@ -7,7 +7,9 @@ public class NotePressed : MonoBehaviour{
     public bool canBePress;
     public KeyCode KeyToPress;
 
-    public KeyCode buttonToPress;
+    public KeyCode xboxButtonToPress;
+
+    public KeyCode playstationButtons;
 
     private bool obtained = false;
 
@@ -20,7 +22,7 @@ public class NotePressed : MonoBehaviour{
 
     // Update is called once per frame
     void Update(){
-        if (Input.GetKeyDown(KeyToPress) || Input.GetKeyDown(buttonToPress)){
+        if (Input.GetKeyDown(KeyToPress) || Input.GetKeyDown(xboxButtonToPress) || Input.GetKeyDown(playstationButtons)){
             if (canBePress){
 
                 // GameManager.instance.NoteHit();
