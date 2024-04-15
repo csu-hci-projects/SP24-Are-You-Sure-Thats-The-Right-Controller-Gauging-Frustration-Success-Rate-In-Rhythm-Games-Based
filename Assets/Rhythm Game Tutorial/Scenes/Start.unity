@@ -474,7 +474,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canBePress: 0
   KeyToPress: 274
-  xboxButtonToPress: 0
+  xboxButtonToPress: 330
   playstationButtons: 361
   hitEffect: {fileID: 3672011291635081465, guid: 16f566285daa02046aceb30b397d4f31, type: 3}
   goodEffect: {fileID: 2303600328577874413, guid: aa7f18c02f7aa7e4da3c2bbfe1987e50, type: 3}
@@ -827,7 +827,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canBePress: 0
   KeyToPress: 276
-  xboxButtonToPress: 0
+  xboxButtonToPress: 332
   playstationButtons: 334
   hitEffect: {fileID: 3672011291635081465, guid: 16f566285daa02046aceb30b397d4f31, type: 3}
   goodEffect: {fileID: 2303600328577874413, guid: aa7f18c02f7aa7e4da3c2bbfe1987e50, type: 3}
@@ -1659,7 +1659,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canBePress: 0
   KeyToPress: 274
-  xboxButtonToPress: 0
+  xboxButtonToPress: 330
   playstationButtons: 341
   hitEffect: {fileID: 3672011291635081465, guid: 16f566285daa02046aceb30b397d4f31, type: 3}
   goodEffect: {fileID: 2303600328577874413, guid: aa7f18c02f7aa7e4da3c2bbfe1987e50, type: 3}
@@ -1861,7 +1861,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canBePress: 0
   KeyToPress: 274
-  xboxButtonToPress: 0
+  xboxButtonToPress: 330
   playstationButtons: 341
   hitEffect: {fileID: 3672011291635081465, guid: 16f566285daa02046aceb30b397d4f31, type: 3}
   goodEffect: {fileID: 2303600328577874413, guid: aa7f18c02f7aa7e4da3c2bbfe1987e50, type: 3}
@@ -1983,7 +1983,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canBePress: 0
   KeyToPress: 275
-  xboxButtonToPress: 0
+  xboxButtonToPress: 331
   playstationButtons: 335
   hitEffect: {fileID: 3672011291635081465, guid: 16f566285daa02046aceb30b397d4f31, type: 3}
   goodEffect: {fileID: 2303600328577874413, guid: aa7f18c02f7aa7e4da3c2bbfe1987e50, type: 3}
@@ -2105,7 +2105,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canBePress: 0
   KeyToPress: 276
-  xboxButtonToPress: 0
+  xboxButtonToPress: 332
   playstationButtons: 334
   hitEffect: {fileID: 3672011291635081465, guid: 16f566285daa02046aceb30b397d4f31, type: 3}
   goodEffect: {fileID: 2303600328577874413, guid: aa7f18c02f7aa7e4da3c2bbfe1987e50, type: 3}
@@ -2435,7 +2435,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canBePress: 0
   KeyToPress: 276
-  xboxButtonToPress: 0
+  xboxButtonToPress: 332
   playstationButtons: 334
   hitEffect: {fileID: 3672011291635081465, guid: 16f566285daa02046aceb30b397d4f31, type: 3}
   goodEffect: {fileID: 2303600328577874413, guid: aa7f18c02f7aa7e4da3c2bbfe1987e50, type: 3}
@@ -2776,7 +2776,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canBePress: 0
   KeyToPress: 273
-  xboxButtonToPress: 0
+  xboxButtonToPress: 333
   playstationButtons: 340
   hitEffect: {fileID: 3672011291635081465, guid: 16f566285daa02046aceb30b397d4f31, type: 3}
   goodEffect: {fileID: 2303600328577874413, guid: aa7f18c02f7aa7e4da3c2bbfe1987e50, type: 3}
@@ -3083,7 +3083,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canBePress: 0
   KeyToPress: 273
-  xboxButtonToPress: 0
+  xboxButtonToPress: 333
   playstationButtons: 340
   hitEffect: {fileID: 3672011291635081465, guid: 16f566285daa02046aceb30b397d4f31, type: 3}
   goodEffect: {fileID: 2303600328577874413, guid: aa7f18c02f7aa7e4da3c2bbfe1987e50, type: 3}
@@ -3205,7 +3205,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canBePress: 0
   KeyToPress: 273
-  xboxButtonToPress: 0
+  xboxButtonToPress: 333
   playstationButtons: 340
   hitEffect: {fileID: 3672011291635081465, guid: 16f566285daa02046aceb30b397d4f31, type: 3}
   goodEffect: {fileID: 2303600328577874413, guid: aa7f18c02f7aa7e4da3c2bbfe1987e50, type: 3}
@@ -3395,7 +3395,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canBePress: 0
   KeyToPress: 275
-  xboxButtonToPress: 0
+  xboxButtonToPress: 331
   playstationButtons: 335
   hitEffect: {fileID: 3672011291635081465, guid: 16f566285daa02046aceb30b397d4f31, type: 3}
   goodEffect: {fileID: 2303600328577874413, guid: aa7f18c02f7aa7e4da3c2bbfe1987e50, type: 3}
@@ -3581,7 +3581,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canBePress: 0
   KeyToPress: 276
-  xboxButtonToPress: 0
+  xboxButtonToPress: 332
   playstationButtons: 334
   hitEffect: {fileID: 3672011291635081465, guid: 16f566285daa02046aceb30b397d4f31, type: 3}
   goodEffect: {fileID: 2303600328577874413, guid: aa7f18c02f7aa7e4da3c2bbfe1987e50, type: 3}
@@ -3879,7 +3879,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canBePress: 0
   KeyToPress: 275
-  xboxButtonToPress: 0
+  xboxButtonToPress: 331
   playstationButtons: 335
   hitEffect: {fileID: 3672011291635081465, guid: 16f566285daa02046aceb30b397d4f31, type: 3}
   goodEffect: {fileID: 2303600328577874413, guid: aa7f18c02f7aa7e4da3c2bbfe1987e50, type: 3}
