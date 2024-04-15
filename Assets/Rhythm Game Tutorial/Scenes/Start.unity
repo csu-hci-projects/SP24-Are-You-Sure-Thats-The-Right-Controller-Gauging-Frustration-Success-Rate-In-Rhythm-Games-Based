@@ -225,7 +225,7 @@ MonoBehaviour:
   defaultImage: {fileID: 21300000, guid: ed2984e24d5df6f46a80ead6ad2964fa, type: 3}
   pressedImage: {fileID: 21300000, guid: 8f47ff751b3bdec48862adf0100c74fa, type: 3}
   keyToPress: 273
-  buttonToPress: 333
+  xboxButtonToPress: 333
 --- !u!50 &42740292
 Rigidbody2D:
   serializedVersion: 4
@@ -271,7 +271,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1, y: 0.49}
   m_EdgeRadius: 0
 --- !u!1 &207524316
 GameObject:
@@ -322,6 +322,8 @@ MonoBehaviour:
   beatScroller: {fileID: 1366301395}
   currentScore: 0
   scorePerNote: 100
+  scorePerGood: 125
+  scorePerPerfect: 150
   currentMultiplier: 1
   multiplierTracker: 0
   multiplierThreshold: 040000000800000010000000
@@ -456,7 +458,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.2
+  m_Radius: 0.17
 --- !u!114 &319499315
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -472,6 +474,10 @@ MonoBehaviour:
   canBePress: 0
   KeyToPress: 274
   buttonToPress: 330
+  hitEffect: {fileID: 3672011291635081465, guid: 16f566285daa02046aceb30b397d4f31, type: 3}
+  goodEffect: {fileID: 2303600328577874413, guid: aa7f18c02f7aa7e4da3c2bbfe1987e50, type: 3}
+  perfectEffect: {fileID: 184017185033894323, guid: 81c88433d9f7a284d9e4a03e405d5f7f, type: 3}
+  missEffect: {fileID: 3854778560937650032, guid: f36dc074b7fa0b3489783643c98be9fa, type: 3}
 --- !u!212 &319499316
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -706,7 +712,7 @@ MonoBehaviour:
   defaultImage: {fileID: 21300000, guid: c3c13b1f8baa5dd4a86d3dc186668178, type: 3}
   pressedImage: {fileID: 21300000, guid: 2d10ec486261df445b73774ff82f1b69, type: 3}
   keyToPress: 274
-  buttonToPress: 330
+  xboxButtonToPress: 330
 --- !u!50 &335185283
 Rigidbody2D:
   serializedVersion: 4
@@ -752,7 +758,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1, y: 0.49}
   m_EdgeRadius: 0
 --- !u!1 &361855823
 GameObject:
@@ -803,7 +809,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.2
+  m_Radius: 0.17
 --- !u!114 &361855826
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -819,6 +825,10 @@ MonoBehaviour:
   canBePress: 0
   KeyToPress: 276
   buttonToPress: 332
+  hitEffect: {fileID: 3672011291635081465, guid: 16f566285daa02046aceb30b397d4f31, type: 3}
+  goodEffect: {fileID: 2303600328577874413, guid: aa7f18c02f7aa7e4da3c2bbfe1987e50, type: 3}
+  perfectEffect: {fileID: 184017185033894323, guid: 81c88433d9f7a284d9e4a03e405d5f7f, type: 3}
+  missEffect: {fileID: 3854778560937650032, guid: f36dc074b7fa0b3489783643c98be9fa, type: 3}
 --- !u!212 &361855827
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -973,7 +983,7 @@ MonoBehaviour:
   defaultImage: {fileID: 21300000, guid: ad187f74f2d0cc4499f39a0267b9eda8, type: 3}
   pressedImage: {fileID: 21300000, guid: 18bf226de2d59284e904c26430f659c9, type: 3}
   keyToPress: 276
-  buttonToPress: 332
+  xboxButtonToPress: 332
 --- !u!50 &450328918
 Rigidbody2D:
   serializedVersion: 4
@@ -1019,7 +1029,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1, y: 0.49}
   m_EdgeRadius: 0
 --- !u!1 &515992356
 GameObject:
@@ -1629,7 +1639,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.2
+  m_Radius: 0.17
 --- !u!114 &772293848
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1645,6 +1655,10 @@ MonoBehaviour:
   canBePress: 0
   KeyToPress: 274
   buttonToPress: 330
+  hitEffect: {fileID: 3672011291635081465, guid: 16f566285daa02046aceb30b397d4f31, type: 3}
+  goodEffect: {fileID: 2303600328577874413, guid: aa7f18c02f7aa7e4da3c2bbfe1987e50, type: 3}
+  perfectEffect: {fileID: 184017185033894323, guid: 81c88433d9f7a284d9e4a03e405d5f7f, type: 3}
+  missEffect: {fileID: 3854778560937650032, guid: f36dc074b7fa0b3489783643c98be9fa, type: 3}
 --- !u!212 &772293849
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1826,7 +1840,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.2
+  m_Radius: 0.17
 --- !u!114 &924022540
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1842,6 +1856,10 @@ MonoBehaviour:
   canBePress: 0
   KeyToPress: 274
   buttonToPress: 330
+  hitEffect: {fileID: 3672011291635081465, guid: 16f566285daa02046aceb30b397d4f31, type: 3}
+  goodEffect: {fileID: 2303600328577874413, guid: aa7f18c02f7aa7e4da3c2bbfe1987e50, type: 3}
+  perfectEffect: {fileID: 184017185033894323, guid: 81c88433d9f7a284d9e4a03e405d5f7f, type: 3}
+  missEffect: {fileID: 3854778560937650032, guid: f36dc074b7fa0b3489783643c98be9fa, type: 3}
 --- !u!212 &924022541
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1943,7 +1961,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.2
+  m_Radius: 0.17
 --- !u!114 &940313732
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1959,6 +1977,10 @@ MonoBehaviour:
   canBePress: 0
   KeyToPress: 275
   buttonToPress: 331
+  hitEffect: {fileID: 3672011291635081465, guid: 16f566285daa02046aceb30b397d4f31, type: 3}
+  goodEffect: {fileID: 2303600328577874413, guid: aa7f18c02f7aa7e4da3c2bbfe1987e50, type: 3}
+  perfectEffect: {fileID: 184017185033894323, guid: 81c88433d9f7a284d9e4a03e405d5f7f, type: 3}
+  missEffect: {fileID: 3854778560937650032, guid: f36dc074b7fa0b3489783643c98be9fa, type: 3}
 --- !u!212 &940313733
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2076,6 +2098,10 @@ MonoBehaviour:
   canBePress: 0
   KeyToPress: 276
   buttonToPress: 332
+  hitEffect: {fileID: 3672011291635081465, guid: 16f566285daa02046aceb30b397d4f31, type: 3}
+  goodEffect: {fileID: 2303600328577874413, guid: aa7f18c02f7aa7e4da3c2bbfe1987e50, type: 3}
+  perfectEffect: {fileID: 184017185033894323, guid: 81c88433d9f7a284d9e4a03e405d5f7f, type: 3}
+  missEffect: {fileID: 3854778560937650032, guid: f36dc074b7fa0b3489783643c98be9fa, type: 3}
 --- !u!212 &981564656
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2385,7 +2411,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.2
+  m_Radius: 0.17
 --- !u!114 &1193977923
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2401,6 +2427,10 @@ MonoBehaviour:
   canBePress: 0
   KeyToPress: 276
   buttonToPress: 332
+  hitEffect: {fileID: 3672011291635081465, guid: 16f566285daa02046aceb30b397d4f31, type: 3}
+  goodEffect: {fileID: 2303600328577874413, guid: aa7f18c02f7aa7e4da3c2bbfe1987e50, type: 3}
+  perfectEffect: {fileID: 184017185033894323, guid: 81c88433d9f7a284d9e4a03e405d5f7f, type: 3}
+  missEffect: {fileID: 3854778560937650032, guid: f36dc074b7fa0b3489783643c98be9fa, type: 3}
 --- !u!212 &1193977924
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2721,7 +2751,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.2
+  m_Radius: 0.17
 --- !u!114 &1526072291
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2737,6 +2767,10 @@ MonoBehaviour:
   canBePress: 0
   KeyToPress: 273
   buttonToPress: 333
+  hitEffect: {fileID: 3672011291635081465, guid: 16f566285daa02046aceb30b397d4f31, type: 3}
+  goodEffect: {fileID: 2303600328577874413, guid: aa7f18c02f7aa7e4da3c2bbfe1987e50, type: 3}
+  perfectEffect: {fileID: 184017185033894323, guid: 81c88433d9f7a284d9e4a03e405d5f7f, type: 3}
+  missEffect: {fileID: 3854778560937650032, guid: f36dc074b7fa0b3489783643c98be9fa, type: 3}
 --- !u!212 &1526072292
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3023,7 +3057,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.2
+  m_Radius: 0.17
 --- !u!114 &1663941606
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3039,6 +3073,10 @@ MonoBehaviour:
   canBePress: 0
   KeyToPress: 273
   buttonToPress: 333
+  hitEffect: {fileID: 3672011291635081465, guid: 16f566285daa02046aceb30b397d4f31, type: 3}
+  goodEffect: {fileID: 2303600328577874413, guid: aa7f18c02f7aa7e4da3c2bbfe1987e50, type: 3}
+  perfectEffect: {fileID: 184017185033894323, guid: 81c88433d9f7a284d9e4a03e405d5f7f, type: 3}
+  missEffect: {fileID: 3854778560937650032, guid: f36dc074b7fa0b3489783643c98be9fa, type: 3}
 --- !u!212 &1663941607
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3140,7 +3178,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.2
+  m_Radius: 0.17
 --- !u!114 &1664147017
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3156,6 +3194,10 @@ MonoBehaviour:
   canBePress: 0
   KeyToPress: 273
   buttonToPress: 333
+  hitEffect: {fileID: 3672011291635081465, guid: 16f566285daa02046aceb30b397d4f31, type: 3}
+  goodEffect: {fileID: 2303600328577874413, guid: aa7f18c02f7aa7e4da3c2bbfe1987e50, type: 3}
+  perfectEffect: {fileID: 184017185033894323, guid: 81c88433d9f7a284d9e4a03e405d5f7f, type: 3}
+  missEffect: {fileID: 3854778560937650032, guid: f36dc074b7fa0b3489783643c98be9fa, type: 3}
 --- !u!212 &1664147018
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3325,7 +3367,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.2
+  m_Radius: 0.17
 --- !u!114 &1720896319
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3341,6 +3383,10 @@ MonoBehaviour:
   canBePress: 0
   KeyToPress: 275
   buttonToPress: 331
+  hitEffect: {fileID: 3672011291635081465, guid: 16f566285daa02046aceb30b397d4f31, type: 3}
+  goodEffect: {fileID: 2303600328577874413, guid: aa7f18c02f7aa7e4da3c2bbfe1987e50, type: 3}
+  perfectEffect: {fileID: 184017185033894323, guid: 81c88433d9f7a284d9e4a03e405d5f7f, type: 3}
+  missEffect: {fileID: 3854778560937650032, guid: f36dc074b7fa0b3489783643c98be9fa, type: 3}
 --- !u!212 &1720896320
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3500,7 +3546,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1850142277}
   m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
-  m_LocalPosition: {x: -1.49, y: 3.87, z: 0}
+  m_LocalPosition: {x: -1.49, y: 3.7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3522,6 +3568,10 @@ MonoBehaviour:
   canBePress: 0
   KeyToPress: 276
   buttonToPress: 332
+  hitEffect: {fileID: 3672011291635081465, guid: 16f566285daa02046aceb30b397d4f31, type: 3}
+  goodEffect: {fileID: 2303600328577874413, guid: aa7f18c02f7aa7e4da3c2bbfe1987e50, type: 3}
+  perfectEffect: {fileID: 184017185033894323, guid: 81c88433d9f7a284d9e4a03e405d5f7f, type: 3}
+  missEffect: {fileID: 3854778560937650032, guid: f36dc074b7fa0b3489783643c98be9fa, type: 3}
 --- !u!212 &1850142280
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3589,7 +3639,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.2
+  m_Radius: 0.17
 --- !u!1 &1894841108
 GameObject:
   m_ObjectHideFlags: 0
@@ -3799,7 +3849,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.2
+  m_Radius: 0.17
 --- !u!114 &1910152875
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3815,6 +3865,10 @@ MonoBehaviour:
   canBePress: 0
   KeyToPress: 275
   buttonToPress: 331
+  hitEffect: {fileID: 3672011291635081465, guid: 16f566285daa02046aceb30b397d4f31, type: 3}
+  goodEffect: {fileID: 2303600328577874413, guid: aa7f18c02f7aa7e4da3c2bbfe1987e50, type: 3}
+  perfectEffect: {fileID: 184017185033894323, guid: 81c88433d9f7a284d9e4a03e405d5f7f, type: 3}
+  missEffect: {fileID: 3854778560937650032, guid: f36dc074b7fa0b3489783643c98be9fa, type: 3}
 --- !u!212 &1910152876
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3969,7 +4023,7 @@ MonoBehaviour:
   defaultImage: {fileID: 21300000, guid: 1bbda9210988dfd4db252a09838d254f, type: 3}
   pressedImage: {fileID: 21300000, guid: cacc39dd2a4e88a43aadeddd73e9b1e2, type: 3}
   keyToPress: 275
-  buttonToPress: 331
+  xboxButtonToPress: 331
 --- !u!50 &1954822629
 Rigidbody2D:
   serializedVersion: 4
@@ -4015,7 +4069,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1, y: 0.49}
   m_EdgeRadius: 0
 --- !u!1 &1971809611
 GameObject:
