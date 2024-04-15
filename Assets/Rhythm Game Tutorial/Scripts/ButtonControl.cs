@@ -11,6 +11,8 @@ public class ButtonControl : MonoBehaviour {
     public KeyCode keyToPress;
 
     public KeyCode xboxButtonToPress;
+    
+    public KeyCode playstationButtons;
 
     void Start(){
         spriteRender = GetComponent<SpriteRenderer>();
@@ -19,11 +21,11 @@ public class ButtonControl : MonoBehaviour {
 
     // Update is called once per frame
     void Update(){
-        if (Input.GetKeyDown(keyToPress) || Input.GetKeyDown(xboxButtonToPress)){
+        if (Input.GetKeyDown(keyToPress) || Input.GetKeyDown(xboxButtonToPress) || Input.GetKeyDown(playstationButtons)){
             spriteRender.sprite = pressedImage;
         }
 
-        if (Input.GetKeyUp(keyToPress) || Input.GetKeyUp(xboxButtonToPress)){
+        if (Input.GetKeyUp(keyToPress) || Input.GetKeyUp(xboxButtonToPress) || Input.GetKeyUp(playstationButtons)){
             spriteRender.sprite = defaultImage;
         }
     }
