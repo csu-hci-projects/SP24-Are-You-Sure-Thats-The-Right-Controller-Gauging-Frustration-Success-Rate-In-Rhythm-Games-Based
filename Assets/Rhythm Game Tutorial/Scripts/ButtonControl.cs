@@ -16,7 +16,6 @@ public class ButtonControl : MonoBehaviour {
 
     void Start(){
         spriteRender = GetComponent<SpriteRenderer>();
-        
     }
 
     // Update is called once per frame
