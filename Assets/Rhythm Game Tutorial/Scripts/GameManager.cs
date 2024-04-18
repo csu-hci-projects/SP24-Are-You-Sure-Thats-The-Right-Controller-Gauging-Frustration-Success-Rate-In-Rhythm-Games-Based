@@ -90,11 +90,6 @@ public class GameManager : MonoBehaviour{
      
     }
 
-    
-
-
-
-
     public void NoteHit(){
         Debug.Log("Hit");
         if(currentMultiplier - 1 < multiplierThreshold.Length){
