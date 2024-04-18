@@ -227,6 +227,7 @@ MonoBehaviour:
   keyToPress: 273
   xboxButtonToPress: 333
   playstationButtons: 340
+  wiiController: 0
 --- !u!50 &42740292
 Rigidbody2D:
   serializedVersion: 4
@@ -728,6 +729,7 @@ MonoBehaviour:
   keyToPress: 274
   xboxButtonToPress: 330
   playstationButtons: 341
+  wiiController: 0
 --- !u!50 &335185283
 Rigidbody2D:
   serializedVersion: 4
@@ -1001,6 +1003,7 @@ MonoBehaviour:
   keyToPress: 276
   xboxButtonToPress: 332
   playstationButtons: 334
+  wiiController: 0
 --- !u!50 &450328918
 Rigidbody2D:
   serializedVersion: 4
@@ -1376,7 +1379,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -257.01282}
+  m_AnchoredPosition: {x: -3.2833414, y: -269.73956}
   m_SizeDelta: {x: 753.2, y: 86.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &745663033
@@ -2517,7 +2520,7 @@ GameObject:
   - component: {fileID: 1294892956}
   - component: {fileID: 1294892955}
   m_Layer: 5
-  m_Name: Rank Value
+  m_Name: Participant Value
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2540,7 +2543,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 279.99988, y: -206.00002}
+  m_AnchoredPosition: {x: -8, y: -199}
   m_SizeDelta: {x: 459.7, y: 181.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1294892955
@@ -2565,7 +2568,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 85
+    m_FontSize: 45
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -2656,7 +2659,7 @@ GameObject:
   - component: {fileID: 1392113490}
   - component: {fileID: 1392113489}
   m_Layer: 5
-  m_Name: Rank
+  m_Name: Participant
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2679,7 +2682,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -280, y: -206}
+  m_AnchoredPosition: {x: -479, y: -197}
   m_SizeDelta: {x: 459.7, y: 86.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1392113489
@@ -2715,7 +2718,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Rank
+  m_Text: 'Participant Number:'
 --- !u!222 &1392113490
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4053,6 +4056,7 @@ MonoBehaviour:
   keyToPress: 275
   xboxButtonToPress: 331
   playstationButtons: 335
+  wiiController: 0
 --- !u!50 &1954822629
 Rigidbody2D:
   serializedVersion: 4
@@ -4375,7 +4379,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -189.01282}
+  m_AnchoredPosition: {x: -3.2833242, y: -201.73955}
   m_SizeDelta: {x: 459.7, y: 86.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2030347561
