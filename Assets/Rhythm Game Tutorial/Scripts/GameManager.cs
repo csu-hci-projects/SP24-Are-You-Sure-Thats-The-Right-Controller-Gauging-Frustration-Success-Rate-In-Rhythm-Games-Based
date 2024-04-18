@@ -26,12 +26,21 @@ public class GameManager : MonoBehaviour{
     public Text scoreText;
     public Text multiplierText;
 
+    public float totalNotes;
+    public float normalHits;
+    public float goodHits;
+    public float perfectHits;
+    public float missHits;
+
+    public GameObject resultScreen;
+    public Text percentHitText, normalText, goodText, perfectText, missedText, finalScoreText;
+
     // Start is called before the first frame update
     void Start(){
         instance = this;
-
         scoreText.text = "Score: 0";
         currentMultiplier = 1;
+        totalNotes = FindObjectsOfType<NotePressed>().Length;
     }
 
     // Update is called once per frame
@@ -40,8 +49,24 @@ public class GameManager : MonoBehaviour{
             if (Input.anyKeyDown){
                 starPlaying = true;
                 beatScroller.hasStarted = true;
-
                 music.Play();
+            }
+        }
+
+        else{
+            if (!music.isPlaying && !resultScreen.activeInHierarchy){
+                resultScreen.SetActive(true);
+                normalText.text = normalHits.ToString();
+                goodText.text = goodHits.ToString();
+                perfectText.text = perfectHits.ToString();
+                missedText.text = missHits.ToString();
+
+                float totalHits = normalHits + goodHits + perfectHits;
+                float percentHit = totalHits / totalNotes * 100f;
+
+                percentHitText.text = percentHit.ToString("F1") + "%";
+
+                finalScoreText.text = currentScore.ToString();
             }
         }
     }
@@ -54,11 +79,8 @@ public class GameManager : MonoBehaviour{
                 multiplierTracker = 0;
                 currentMultiplier += 1;
             }
-
         multiplierText.text = "Multiplier: x" + currentMultiplier;
-        // currentScore += scorePerNote * currentMultiplier;
         scoreText.text = "Score: " + currentScore;
-
         }
 
     }
@@ -66,24 +88,26 @@ public class GameManager : MonoBehaviour{
     public void NormalHit(){
         currentScore += scorePerNote * currentMultiplier;
         NoteHit();
+        normalHits++;
     }
 
     public void GoodHit(){
         currentScore += scorePerGood * currentMultiplier;
         NoteHit();
+        goodHits++;
     }
 
     public void PerfectHit(){
         currentScore += scorePerPerfect * currentMultiplier;
         NoteHit();
+        perfectHits++;
     }
 
     public void NoteMissed(){
         Debug.Log("Missed");
-
         currentMultiplier = 1;
         multiplierTracker = 0;
         multiplierText.text = "Multiplier: x" + currentMultiplier;
-
+        missHits++;
     }
 }
