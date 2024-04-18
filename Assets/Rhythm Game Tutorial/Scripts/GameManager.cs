@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
@@ -65,11 +66,46 @@ public class GameManager : MonoBehaviour{
                 float percentHit = totalHits / totalNotes * 100f;
 
                 percentHitText.text = percentHit.ToString("F1") + "%";
-
+                SaveToFile(totalHits, percentHit);
                 finalScoreText.text = currentScore.ToString();
             }
         }
     }
+
+    //CSV FILE STUFF
+    //First is conversion to a csv format
+    public string ToCSV(float totalHits, float percentHit)
+    {
+    return $"{this.totalNotes},{this.normalHits},{this.goodHits},{this.perfectHits},{this.missHits}, {totalHits}, {percentHit}";
+    }
+    //Second is adding to a file that is checked to make sure it is accesible across all session
+     public void SaveToFile(float totalHits, float percentHit)
+    {
+        string saveFilePath = "Assets/Results/Data.csv";
+
+        if (File.Exists(saveFilePath))
+        {
+            // Append data to the existing file
+            using (StreamWriter writer = File.AppendText(saveFilePath))
+            {
+                writer.WriteLine(ToCSV(totalHits, percentHit));
+            }
+        }
+        else
+        {
+            // Create a new file and write data
+            using (StreamWriter writer = File.CreateText(saveFilePath))
+            {
+                writer.WriteLine($"Total Notes, Normal Hits,coin Good Hits, Perfect Hits, Miss Hits, Total Hits, Percent hit"); // Add header if needed
+                writer.WriteLine(ToCSV(totalHits, percentHit));
+            }
+        }
+    }
+
+    
+
+
+
 
     public void NoteHit(){
         Debug.Log("Hit");
