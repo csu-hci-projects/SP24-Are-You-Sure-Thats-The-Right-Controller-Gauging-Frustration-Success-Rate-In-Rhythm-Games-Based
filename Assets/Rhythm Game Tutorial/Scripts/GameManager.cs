@@ -82,24 +82,12 @@ public class GameManager : MonoBehaviour{
      public void SaveToFile(float totalHits, float percentHit)
     {
         string saveFilePath = "Assets/Results/Data.csv";
-
-        if (File.Exists(saveFilePath))
-        {
             // Append data to the existing file
             using (StreamWriter writer = File.AppendText(saveFilePath))
             {
                 writer.WriteLine(ToCSV(totalHits, percentHit));
             }
-        }
-        else
-        {
-            // Create a new file and write data
-            using (StreamWriter writer = File.CreateText(saveFilePath))
-            {
-                writer.WriteLine($"Total Notes, Normal Hits,coin Good Hits, Perfect Hits, Miss Hits, Total Hits, Percent hit"); // Add header if needed
-                writer.WriteLine(ToCSV(totalHits, percentHit));
-            }
-        }
+     
     }
 
     
