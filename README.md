@@ -5,6 +5,7 @@ Videos go here
 https://github.com/csu-hci-projects/SP24-Are-You-Sure-Thats-The-Right-Controller-Gauging-Frustration-Success-Rate-In-Rhythm-Games-Based
 
 #### How To Run The Project
+- You will need Unity for our project
 - Download The Unity Hub first if you do not have Unity and sign in
 - Then download the 2021.3.34f1 Unity Editor.
 - Download our project from GitHub using the link above.
