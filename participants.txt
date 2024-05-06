@@ -1,0 +1,16 @@
+Name	                Email	                     Are you currently a CS464 student(mark with a x)
+Varonika	        wilsonvaronika@gmail.com	
+Zachary	                zachschi@colostate.edu	
+Evan Anspach	        pidge.anspach@colostate.edu	
+Paige Monington	        paige.monington@colostate.edu	       X
+Kylee Hurley	        kyhurley@colostate.edu	               X
+Haillie Wilson		
+Eric Martin	        ebmartin@colostate.edu	
+Tyson O'Leary	        tmoleary@colostate.edu	
+Ticus Brandt	        levib02@colostate.edu	
+Derrick Jeffers	        derrick1@colostate.edu	
+William Scarbro		
+Rajeshwari Deoraj	Rajeshwari.Deoraj@colostate.edu	       X
+Surendra Kurivella	surendra.kurivella@colostate.edu       X
+Yilong Song	        elisong@colostate.edu	               X
+Griffin Opp	        oppgp@colostate.com	               X
