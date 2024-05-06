@@ -1,22 +1,12 @@
-# Are You Sure Thats The Right Controller: Gauging Frustration & Success Rate In Rhythm Games using Different Game Controllers
+# What we did for thist project
+## _What is this project:_
+  In the world of input devices for games there can be many different factors in why a user may choose to a particular one. This study aims to understand different controllers and features that lead to higher success rates and frustration levels for users when playing a rhythm game. To learn more you can look at our [Readme.md](https://github.com/csu-hci-projects/SP24-Are-You-Sure-Thats-The-Right-Controller-Gauging-Frustration-Success-Rate-In-Rhythm-Games-Based/blob/WhatWeDid/Readme.md)
+## _Contributions:_
+  - **Andy** lead the main programming effort and design of the game. He was able to implement the Xbox controller and keyboard.
+  - **Eryn** helped with implementing another stage that was more complex and the final test for users. Seh was able to implement the playstation
+  - **Young** helped
+  - **Britta** helped with solving technical issues with Github, added data collection portion to the game, created the User Consent form  analyzed the data that was collected with Eryn and 
+## _Journey:_
 
-
-## Project Overview
-  In the world of input devices for games there can be many different factors in why a user may choose to use it. This study aims to understand different controllers and features that lead to higher success rates and frustration levels for users when playing a rhythm game.
-  
-## What the project does
-  The project investigates the relationship between different game controllers and player experiences in rhythm games. It aims to answer questions such as:
-
-- How do different controllers affect frustration levels during gameplay?
-- Which controllers lead to higher success rates in rhythm games?
-- Are there specific controller features (e.g., button size, pressure sensitivity) that significantly impact player performance?
-## Why the project is useful
-  Understanding the impact of game controllers on user experiences is valuable for both individuals and developers. For individuals, it provides insights into choosing the right controller for their preferred game genre. For developers, it informs design decisions and helps create more enjoyable and accessible experiences.
-## How users can get started with the project
-* Visit [this project repository](https://github.com/csu-hci-projects/SP24-Are-You-Sure-Thats-The-Right-Controller-Gauging-Frustration-Success-Rate-In-Rhythm-Games-Based) on GitHub.
-* Explore the README for details on data collection, analysis, and findings.
-* Contribute by sharing your own experiences with different controllers in rhythm games.
-## Where users can get help with your project
-For any questions or assistance, feel free to open an issue in the [GitHub repository](https://github.com/csu-hci-projects/SP24-Are-You-Sure-Thats-The-Right-Controller-Gauging-Frustration-Success-Rate-In-Rhythm-Games-Based/issues).
-## Who maintains and contributes to the project
-This project is maintained by the CSU Human-Centered-Interaction(HCI) 464 Project teams. Contributions from researchers, gamers, and anyone interested in improving gaming experiences are welcomed.
+### Struggles:
+  - **Britta**: What I struggled with during this project was getting the WII remote to work from Week 4 - 11. When I was researching how to use the Wii remote I discovered there was [multiple different ways](https://answers.microsoft.com/en-us/windows/forum/all/how-to-connect-wii-remote-to-windows-11/20d5b074-73d8-4a79-871f-37831d7cbc42) to connect it, however I choose to try and implement it via bluetooth to avoid having to carry the sensor which was another solution while working on debuging it. Afterwards I researched different ways to implement the Wii remote and conclude to try both the [HIID Wiimote library](https://www.julianloehr.de/educational-work/hid-wiimote/) and following along with [this video by user **hio Man**](https://www.youtube.com/watch?v=LHbRlL8SBgE). I initally tried following how **hio man** implemented the WIImote, however quickly ran into issues where after downloading the extension and then package it still wouldn't pick up the in the code and even checking if all the import lines and necessary librarys, files and other things were present still couldn't figure out what was the issues. I tried to redownload it from scratch a few time, but stopped after two weeks when I wasn't making progress. I then trued **HIID Wiimote library**, however in the middle of getting this implemented we talked about timelines as a team and determine it wasn't worth trying to implement further. Even if it was succesfully implemented it potentially wouldn't work with how we had already iplemented the playstation and xbox remotes. So we scrapped it.
