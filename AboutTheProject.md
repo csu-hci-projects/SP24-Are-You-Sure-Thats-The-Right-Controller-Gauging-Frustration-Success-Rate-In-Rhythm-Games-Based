@@ -4,7 +4,7 @@
 ## _Contributions:_
   - **Andy**: led the main programming effort and design of the game. He was able to implement the Xbox controller and keyboard.
   - **Eryn**: helped with implementing another more complex stage and the final test for users. She was able to implement the PlayStation Controller.
-  - **Ziyang**: helped the paper with the abstract, methodology, future work, conclusion, and acknowledgments. He also recorded a demo of how to play the game.
+  - **Ziyang**: helped the paper with the abstract, methodology, PlayStation 5 of result, future work, conclusion, and acknowledgments. He also recorded a demo of how to play the game.
   - **Britta**: helped with solving technical issues with Github, added a data collection portion to the game, created the User Consent Form, and analyzed the data that was collected with Eryn. 
 ## _Journey:_
 
