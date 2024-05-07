@@ -1,7 +1,7 @@
 #### Videos Link
 
 - Project Overview Video
-  -  (Placeholder)
+  -  https://youtu.be/Z0328CJvRoY
 
 - Code & Prototype Demo Link
   - https://youtu.be/1AxV68QFb30
